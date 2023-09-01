@@ -203,7 +203,7 @@ id.head()
 
 sns.boxplot(x='sepal_width',data=id)
 
-![MODEL]()
+![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20221938.png)
 
 c1=id.sepal_width.quantile(0.25)
 c3=id.sepal_width.quantile(0.75)
