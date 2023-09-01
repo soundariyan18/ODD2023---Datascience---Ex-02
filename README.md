@@ -116,7 +116,7 @@ sns.boxplot(data=af)
 
 sns.scatterplot(data=af)
 
-![MODEL]()
+![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20195328.png)
 
 q1=af.quantile(0.25)
 q2=af.quantile(0.5)
