@@ -215,7 +215,7 @@ print(c3)
 rid=id[((id.sepal_width<(c1-1.5*iq))|(id.sepal_width>(c3+1.5*iq)))]
 rid['sepal_width']
 
-![MODEL]()
+![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20222005.png)
 
 delid=id[~((id.sepal_width<(c1-1.5*iq))|(id.sepal_width>(c3+1.5*iq)))]
 delid
