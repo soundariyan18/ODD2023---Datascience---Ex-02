@@ -133,7 +133,7 @@ low
 high=q1+1.5*iqr
 high
 
-![MODEL]()
+![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20195421.png)
 
 aq=af[((af>=low)&(af<=high))]
 aq.dropna()
