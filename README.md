@@ -47,17 +47,25 @@ q1=af.quantile(0.25)
 q2=af.quantile(0.5)
 q3=af.quantile(0.75)
 iqr=q3-q1
+
 low=q1-1.5*iqr
 low
+
 high=q1+1.5*iqr
 high
+
 aq=af[((af>=low)&(af<=high))]
 aq.dropna()
+
 sns.boxplot(data=af)
+
 af=af[((af>=low)&(af<=high))]
 af.dropna()
+
 sns.boxplot(data=af)
+
 sns.scatterplot(data=af)
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -65,9 +73,12 @@ from scipy import stats
 data = {'weight':[12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,69,202,72,75,78,81,84,232,87,90,93,96,99,258]}
 df=pd.DataFrame(data)
 df
+
 sns.boxplot(data=df)
+
 z=np.abs(stats.zscore(df))
 print(df[z['weight']>3])
+
 val=[12,15,18,21,24,27,30,33,36,39,42,45,48,51,54,57,60,63,69,202,72,75,78,81,84,232,87,90,93,96,99,258]
 out=[]
 def d_o(val):
@@ -81,21 +92,27 @@ def d_o(val):
   return out
 op=d_o(val)
 op
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
 from scipy import stats
 id=pd.read_csv("iris.csv")
 id.head()
+
 sns.boxplot(x='sepal_width',data=id)
+
 c1=id.sepal_width.quantile(0.25)
 c3=id.sepal_width.quantile(0.75)
 iq=c3-c1
 print(c3)
+
 rid=id[((id.sepal_width<(c1-1.5*iq))|(id.sepal_width>(c3+1.5*iq)))]
 rid['sepal_width']
+
 delid=id[~((id.sepal_width<(c1-1.5*iq))|(id.sepal_width>(c3+1.5*iq)))]
 delid
+
 sns.boxplot(x='sepal_width',data=delid)
 ```
 
@@ -221,12 +238,15 @@ rid['sepal_width']
 
 delid=id[~((id.sepal_width<(c1-1.5*iq))|(id.sepal_width>(c3+1.5*iq)))]
 delid
-https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20222005.pn
+
 ![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20222005.png)
 
 sns.boxplot(x='sepal_width',data=delid)
 
 
+REAULT:
+
+Thus the outliers are detected and removed in the given file and the final data set is saved into the file.
 
 
 
