@@ -112,7 +112,7 @@ af
 
 sns.boxplot(data=af)
 
-![MODEL]()
+![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20195214.png)
 
 sns.scatterplot(data=af)
 
