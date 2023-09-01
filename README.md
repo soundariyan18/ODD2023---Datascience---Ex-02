@@ -199,7 +199,7 @@ from scipy import stats
 id=pd.read_csv("iris.csv")
 id.head()
 
-![MODEL]()
+![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20221605.png)
 
 sns.boxplot(x='sepal_width',data=id)
 
