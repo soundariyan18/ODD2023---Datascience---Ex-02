@@ -142,12 +142,12 @@ aq.dropna()
 
 sns.boxplot(data=af)
 
-![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20195455.png)
+![MODEL]()
 
 af=af[((af>=low)&(af<=high))]
 af.dropna()
 
-![MODEL](https://github.com/soundariyan18/ODD2023---Datascience---Ex-02/blob/main/Screenshot%202023-09-01%20195455.png)
+![MODEL]()
 
 sns.boxplot(data=af)
 
